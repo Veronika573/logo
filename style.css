@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea {
+    outline: none;
+    border-style: solid;
+    background-color: transparent;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.hero-section, .services {
+    background: url(img/fond.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 31px;
+}
+
+header .logo_text {
+    font-size: 36px;
+    font-weight: 900;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+header .phone_img {
+    width: 21px;
+}
+
+
+header .number {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 13px;
+}
+
+header .telephone {
+    display: flex;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    header .number {
+        display: none;
+    }
+}
+
+.hero-section .cta_group {
+    width: 60%;
+}
+
+.hero-section .cta {
+    margin-top: 131px;
+}
+
+.hero-section .cta_text {
+    font-size: 36px;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 62px;
+}
+
+.hero-section .cta_bitmain {
+    color: #F2B14C;
+}
+
+.benefit_text {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.benefit_group {
+    display: flex;
+}
+
+.benefit_group:not(:last-child) {
+    margin-bottom: 29px;
+}
+
+.hero-section_img {
+    width: 50%;
+    margin-left: -13px;
+}
+
+.call_clear {
+    width: 280px;
+    padding: 18px 33px 18px 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 100px;
+    border-color: #F2B14C;
+    cursor: pointer;
+    margin-top: 61px;
+}
+
+.call_clear:hover {
+    background: linear-gradient(180deg, #F2A04A 0%, #F2C24D 100%), #C4C4C4;
+}
+
+.call_clear .dash {
+    margin-right: 20px;
+}
+
+.hero-section .machine {
+    margin-top: -63px;
+    margin-left: -140px;
+    max-width: 986px;
+}
+
+.hero-section .mouse {
+    position: absolute;
+    margin-top: -131px;
+    margin-left: 68px;
+    cursor: pointer;
+}
+
+.hero-section .lending {
+    display: flex;
+}
+
+.antminer .container {
+    margin-top: 83px;
+    display: flex;
+}
+
+.antminer .antimer_text {
+    width: 50%;
+}
+
+.caption_text {
+    color: #333333;
+    font-size: 36px;
+    font-weight: 900;
+    margin-left: 17px;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .caption_text {
+        font-size: 24px;
+        margin-left: 12px;
+    }
+}
+
+.paragraph {
+    margin-top: 37px;
+}
+
+.paragraph_text {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.paragraph_text:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+    .paragraph_text:not(:first-child) {
+        display: none;
+    }
+    .paragraph_text {
+        width: 100%;
+    }
+    .button_colored {
+        display: none;
+    }
+    .antminer .button_colored_mobile {
+        display: block;
+    }
+    .antminer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.button_colored_mobile {
+    display: none;
+}
+
+.call_colored {
+    padding: 18px 33px 18px 30px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #F2A04A 0%, #F2C24D 100%), #C4C4C4;
+    border-color: #F2B14C;
+    font-size: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 61px;
+}
+
+.call_colored:hover {
+    background: #F2A04A;
+}
+
+.call_colored .dash {
+    margin-right: 20px;
+}
+
+.antminer .machine_img2 {
+    margin-top: 23px;
+}
+
+.ecosystem {
+    margin-top: 98px;
+    background: #F4F8FA;
+}
+
+.ecosystem .caption {
+    padding-top: 74px;
+}
+
+.ecosystem .rounds {
+    width: 100%;
+}
+
+.ecosystem .rounds_mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .ecosystem .rounds {
+        display: none;
+    }
+    .ecosystem .rounds_mobile {
+        display: block;
+        width: 100%;
+    }
+}
+
+.caption_white .caption_text {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 900;
+    margin-left: 17px;
+}
+
+.caption_white {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .caption_white .caption_text {
+        font-size: 24px;
+        margin-left: 12px;
+    }
+}
+
+.services {
+    background: url(img/cervis_fond.png);
+}
+
+.services .caption_white {
+    padding-top: 103px;
+    margin-bottom: 61px;
+}
+
+.services .price {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 48px;
+}
+
+.services .price_text {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.services .cervis_img {
+    width: 100%;
+    margin-left: 60px;
+}
+
+.services .container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 110px;
+}
